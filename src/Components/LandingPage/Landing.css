@@ -1,0 +1,17 @@
+
+
+@media screen and (max-width: 415px) { 
+    .table-header{
+        display: none;
+    }
+    .delivery-list{
+        padding: 0px;
+        background-color:transparent;
+    }
+}
+
+
+@media screen and (max-width: 820px) { }
+
+
+@media (min-width: 820px) and (max-width: 1024px){}
