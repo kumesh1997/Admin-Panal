@@ -20,7 +20,7 @@ export const Navbar=({
         <div className=' sm:mb-80 lg:mb-0 xl:mb-0' id='navbar'>
             <div className={click ? "main-container" : ""} onClick={() => Close()} />
                 <nav className="navbar" onClick={e => e.stopPropagation()}>
-                    <div className="nav-container flex justify-evenly">
+                    <div className="nav-container flex justify-evenly bg-white">
                         {/* Navbar Logo */}
                         <div className=" flex w-1/3 image-div">
                             <img src='img/Logo2.png' alt='Logo' className=' w-24'/>
