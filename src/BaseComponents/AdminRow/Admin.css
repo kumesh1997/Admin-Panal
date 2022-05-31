@@ -1,0 +1,44 @@
+.delivery-card-content-code-mobile, .delivery-card-content-name-mobile, .delivery-card-content-contact-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 415px) {
+    .delivery-card{
+        /* background-color: rgb(213, 210, 210); */
+        border: none;
+    }
+
+    .delivery-card-content{
+        border: none;
+        box-shadow: 2px 2px 7px 2px #454545;
+    }
+
+    .delivery-card-content-buttons{
+        margin-top: 5%;
+        display: block;
+        border-top: 2px solid gray;
+        padding-top: 4%;
+        padding-bottom: 3%;
+    }
+
+    .delivery-card-content-buttons-dropdown, .delivery-card-content-buttons-seemore{
+        padding: 2%;
+    }
+    .delivery-card-content-code-mobile, .delivery-card-content-name-mobile, .delivery-card-content-contact-mobile{
+        display: inline;
+        text-align:center;
+    }
+
+    /* .delivery-card-content-code-mobile-value, .delivery-card-content-name-mobile-value, .delivery-card-content-contact-mobile-value{
+        font-weight: 500;
+    } */
+    .delivery-card-content-code-mobile-value, .delivery-card-content-name-mobile-value, .delivery-card-content-contact-mobile-value{
+        font-weight:400;
+    }
+ }
+
+
+ @media screen and (max-width: 540) {
+
+ }
