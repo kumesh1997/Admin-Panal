@@ -15,7 +15,7 @@ function Dropdown({ selected, setSelected, extraCss={} }){
                 <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
             {isActive && (
-                    <div className="dropdown-content bg-white absolute left-0 top-full p-3 bd-white shadow-xl w-11/12">
+                    <div className="dropdown-content bg-white absolute left-0 top-full p-3 bd-white shadow-xl w-11/12 z-20">
                         {options.map((option) =>(
                             <div 
                                 onClick={(e) => {
