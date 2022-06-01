@@ -37,6 +37,16 @@ export const Landing=()=>{
                 <div className="row bg-admin-bg p-4 delivery-list sm:p-0 sm:mt-11">
                     <div>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
+                        {/* <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
@@ -46,23 +56,22 @@ export const Landing=()=>{
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
-                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
-                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/> */}
                     </div>
                
                 </div>  
 
 
-                {openModal && <div id="modal" className="modalBackground w-full h-auto bg-modal_bg_gray xl:flex xl:justify-center lg:flex lg:justify-center sm:block align-middle ">
-                        <div className="modalContainer rounded-xl bg-modal_blue shadow-lg flex flex-col p-3 lg:w-3/4 lg:h-3/4 xl:w-3/4 xl:h-3/4 sm:w-full">
+                {openModal && <div id="modal" className="modalBackground w-full h-auto top-0 bottom-0 left-0 right-0 sm:p-4 xl:p-6 lg:p-6 bg-slate-800 bg-opacity-60 fixed xl:flex xl:justify-center lg:flex lg:justify-center sm:block align-middle z-50 overflow-auto touch-auto">
+                        <div className="modalContainer rounded-xl h-auto bg-slate-100 shadow-lg flex flex-col p-3 lg:w-3/4 lg:h-3/4 xl:w-3/4 xl:h-2/3 sm:w-full">
                             <div className=" flex justify-end"><ModalCloseButton ClickHandler={closeModal} /></div>
                     
-                        <div className="title text-center font-bold text-xl mb-2"><h1>Delivery Code: <span className=" text-white">sdcjhjhbdkjdfkv</span></h1></div>
+                        <div className="title text-center font-bold text-xl mb-10"><h1>Delivery Code: <span className=" text-rebornit-primary">sdcjhjhbdkjdfkv</span></h1></div>
                        
                         {/* Body */}
                         <div className="body xl:flex lg:flex sm:block gap-1 mb-1">
 
-                        <div className=" xl:w-3/6 lg:w-3/6 sm:w-full xl:mt-0 bg-white rounded-xl p-2 py-4">
+                        <div className=" xl:w-3/6 lg:w-3/6 sm:w-full xl:mt-0 bg-white rounded-xl p-2 py-4 shadow-lg">
                             <h1 className=" font-bold text-lg px-3">Sender</h1>                                   
                                 <div className="">
                                     <div className=" flex justify-between px-4 mt-3">
@@ -80,7 +89,7 @@ export const Landing=()=>{
                                 </div>
                            </div>
 
-                           <div className=" xl:w-3/6 lg:w-3/6 sm:w-full xl:mt-0 bg-white rounded-xl p-2 py-4">
+                           <div className=" xl:w-3/6 lg:w-3/6 sm:w-full xl:mt-0 bg-white rounded-xl p-2 py-4 shadow-lg">
                             <h1 className=" font-bold text-lg px-3">Receiver</h1>                                   
                                 <div className="">
                                     <div className=" flex justify-between px-4 mt-3">
@@ -101,7 +110,7 @@ export const Landing=()=>{
 
 
                         {/* Footer */}
-                        <div className="footer w-full h-auto bg-white rounded-xl xl:flex xl:justify-evenly lg:flex lg:justify-center sm:block p-2 " >
+                        <div className="footer w-full h-auto bg-white rounded-xl xl:flex xl:justify-evenly lg:flex lg:justify-center sm:block p-2 shadow-md" >
                             
                             <div className=" xl:w-1/4 lg:w-1/4 sm:w-full text-left p-2">
                                 <h1 className=" font-bold text-lg inline-block">Delivery Details</h1>
@@ -143,7 +152,7 @@ export const Landing=()=>{
                                 </div>
                     
                                 <div className="delivery-card-content-buttons-seemore xl:mt-4 lg:mt-4 sm:mt-2">
-                                    <StandartButton children={"Done"} extraTailwindClasses={"p-2 bg-see_more_green xl:h-auto lg:h-11 font-bold shadow-xl lg:text-xs xl:text-sm"} clickHandler={setOpenModal} />
+                                    <StandartButton children={"Done"} extraTailwindClasses={"p-2 bg-see_more_green xl:h-auto lg:h-11 font-bold shadow-xl lg:text-xs xl:text-sm"} clickHandler={closeModal} />
                                 </div>
                             </div> 
                         </div>

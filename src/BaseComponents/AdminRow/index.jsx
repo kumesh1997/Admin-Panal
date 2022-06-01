@@ -16,7 +16,7 @@ function AdminRow({
 
     const [selected, setSelected]=useState("");
 
-    function openTheModel(){
+    function openModel(){
         seemore_button_click(true);
     }
 
@@ -52,7 +52,7 @@ function AdminRow({
                             </div>
                     
                             <div className="col-sm-3 delivery-card-content-buttons-seemore">
-                                <StandartButton children={"more details >>"} extraTailwindClasses={"p-2 bg-see_more_green duration-700 hover:translate-x-2 font-bold shadow-xl lg:text-xs xl:text-sm"} clickHandler={openTheModel}/>
+                                <StandartButton children={"more details >>"} extraTailwindClasses={"p-2 bg-see_more_green duration-700 hover:translate-x-2 font-bold shadow-xl lg:text-xs xl:text-sm"} clickHandler={openModel}/>
                             </div>   
                         </div>
                 </div>
