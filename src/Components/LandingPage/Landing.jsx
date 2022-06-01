@@ -62,7 +62,7 @@ export const Landing=()=>{
                 </div>  
 
 
-                {openModal && <div id="modal" className="modalBackground w-full h-auto top-0 bottom-0 left-0 right-0 xl:p-6 lg:p-6 sm:p-6 bg-slate-800 bg-opacity-60 fixed xl:flex xl:justify-center lg:flex lg:justify-center sm:block align-middle z-50">
+                {openModal && <div id="modal" className="modalBackground w-full h-auto top-0 bottom-0 left-0 right-0 sm:p-4 xl:p-6 lg:p-6 bg-slate-800 bg-opacity-60 fixed xl:flex xl:justify-center lg:flex lg:justify-center sm:block align-middle z-50 overflow-auto touch-auto">
                         <div className="modalContainer rounded-xl h-auto bg-slate-100 shadow-lg flex flex-col p-3 lg:w-3/4 lg:h-3/4 xl:w-3/4 xl:h-2/3 sm:w-full">
                             <div className=" flex justify-end"><ModalCloseButton ClickHandler={closeModal} /></div>
                     
