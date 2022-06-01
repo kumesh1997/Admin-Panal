@@ -13,6 +13,7 @@ module.exports = {
         "see_more_green":"#13BA4C",
         "order_placed_red":"#D33E3E",
         "order_placed_red_dull":"#b56767",
+        "light-blue":"#4084ad",
         "modal_bg":"#edeef6",
         "modal_bg_gray":"#c8c8c8",
         "modal_blue":"#488FB1"
