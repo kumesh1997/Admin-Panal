@@ -1,17 +1,23 @@
 /* eslint-disable max-len */
 import React from "react";
 function ModalCloseButton({ ClickHandler }) {
+
+  function closeModal(){
+    ClickHandler(false);
+  }
+
+  
   return (
     <button
     // hover:scale-105 transform scale-100 duration-300
       className=" group"
 
       type="button"
-      onClick={() => ClickHandler(false)}
+      onClick={ClickHandler}
     >
       <svg
-        width="71"
-        height="71"
+        width="45"
+        height="45"
         viewBox="0 0 71 71"
         fill="none"
         className="group-hover:rotate-90 transform rotate-0 duration-300"

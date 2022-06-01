@@ -6,7 +6,7 @@ function StandartButton({ children, styles, extraTailwindClasses = "", clickHand
       type="button"
       className={`become-provider h-10 rounded-full w-full text-white whitespace-nowrap ${extraTailwindClasses}`}
       style={{ ...styles }}
-      onClick={() => clickHandler(true)}
+      onClick={clickHandler}
     >
       {children}
     </button>

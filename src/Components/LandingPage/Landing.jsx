@@ -11,14 +11,22 @@ import ModalCloseButton from "../../BaseComponents/ModalCloseButton";
 export const Landing=()=>{
 
     const [selected, setSelected]=useState("");
-    const [openModal, setOpenModal]=useState(true);
+    const [openModal, setOpenModal]=useState(false);
     const [immediateCourier, setImmediateCourier]=useState(true);
+
+    function closeModal(){
+        setOpenModal(false);
+    }
+
+    function openTheModel(){
+        setOpenModal(true);
+    }
     
     return(
         <div id="landing" className="container mt-40 xl:mt-28 lg:mt-28">
 
                       {/* Table Headings */}
-                     <div className="row table-header w-full h-12 text-center font-bold bg-admin-bg text-rebornit-primary p-6 fixed">
+                     <div className="row table-header w-full h-12 text-center font-bold bg-admin-bg text-rebornit-primary p-6 fixed z-20">
                           <div className="col-sm-2">Delivery Code</div>
                           <div className="col-sm-2">Receiver's Name</div>
                           <div className="col-sm-2">Mobile Number</div>
@@ -28,7 +36,7 @@ export const Landing=()=>{
           
                 <div className="row bg-admin-bg p-4 delivery-list sm:p-0 sm:mt-11">
                     <div>
-                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={setOpenModal}/>
+                        <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"} seemore_button_click={openTheModel}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
                         <AdminRow css_for_dropdown={"bg-order_placed_red text-white font-bold"}/>
@@ -47,7 +55,7 @@ export const Landing=()=>{
 
                 {openModal && <div id="modal" className="modalBackground w-full h-auto bg-modal_bg_gray xl:flex xl:justify-center lg:flex lg:justify-center sm:block align-middle ">
                         <div className="modalContainer rounded-xl bg-modal_blue shadow-lg flex flex-col p-3 lg:w-3/4 lg:h-3/4 xl:w-3/4 xl:h-3/4 sm:w-full">
-                            <div className=" flex justify-end"><ModalCloseButton ClickHandler={setOpenModal} /></div>
+                            <div className=" flex justify-end"><ModalCloseButton ClickHandler={closeModal} /></div>
                     
                         <div className="title text-center font-bold text-xl mb-2"><h1>Delivery Code: <span className=" text-white">sdcjhjhbdkjdfkv</span></h1></div>
                        
