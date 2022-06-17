@@ -5,13 +5,13 @@ import '../Dropdown/Dropdown.css';
 function Dropdown({ selected, setSelected, extraCss={} }){
 
     const [isActive, setIsActive] = useState(false);
-    const options =["In Transit", "Pickedup", "Delivered"];
+    const options =["Intransit", "Pickedup", "Delivered"];
     return(
-        <div className="dropdown w-full h-10  my-auto cursor-pointer select-none">
+        <div className="dropdown w-full h-8 my-auto cursor-pointer select-none">
             <div className={`dropdown-btn px-4 py-2 flex justify-between border-1 border-black border-opacity-70 rounded-full cursor-pointer ${extraCss} `} 
             onClick={(e) => 
             setIsActive(!isActive)}>
-                {selected? `${selected}`:"Order Placed"} 
+                {selected? `${selected}`:"Ordered"} 
                 <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
             {isActive && (
@@ -22,7 +22,7 @@ function Dropdown({ selected, setSelected, extraCss={} }){
                                 setSelected(option);
                                 setIsActive(false);
                                 }}  
-                                className="drodown-item p-2 cursor-pointer text-black  hover:bg-gray-200 sm:text-sm">
+                                className="drodown-item p-2 cursor-pointer text-black hover:bg-gray-200 sm:text-sm">
                                     {option}
                             </div>
                         ))}

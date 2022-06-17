@@ -33,19 +33,14 @@ export const Landing=()=>{
                      <div className="row table-header w-full h-12 text-center font-bold bg-admin-bg text-rebornit-primary p-6 fixed z-20">
                           <div className="col-sm-2">Delivery Code</div>
                           <div className="col-sm-2">Receiver's Name</div>
-                          <div className="col-sm-2">Mobile Number</div>
+                          <div className="col-sm-1">Contacts</div>
+                          <div className="col-sm-2">Delivery Fee</div>
                           <div className="col-sm-3">Status</div>
                      </div>
                   
           
                 <div className="row bg-admin-bg p-4 delivery-list sm:p-0 sm:mt-11">
                     <div>
-                        <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
-                        <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
-                        <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
-                        <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
-                        <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
-                        <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
                         <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
                         <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
                         <AdminRow css_for_dropdown={"bg-light-blue text-white font-bold"} seemore_button_click={openTheModel}/>
