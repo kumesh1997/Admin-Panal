@@ -44,6 +44,12 @@ function AdminRow({
                         <span className="delivery-card-content-contact-mobile font-bold underline ">Contact Number:</span>
                         <span className="delivery-card-content-contact-mobile-value font-bold">{` ${contact}`}</span>
                         </div>
+
+                    {/* Delivery Fee */}
+                        {/* <div className="delivery-card-content-contact col-sm-2 pt-2">
+                        <span className="delivery-card-content-contact-mobile font-bold underline ">Contact Number:</span>
+                        <span className="delivery-card-content-contact-mobile-value font-bold">{` ${contact}`}</span>
+                        </div> */}
             
                     {/* Status */}
                         <div className="delivery-card-content-buttons col-sm-6 flex justify-evenly">
